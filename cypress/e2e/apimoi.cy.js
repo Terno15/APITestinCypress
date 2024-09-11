@@ -59,7 +59,7 @@ cy.get('@loginQuest').then((ress)=>{
   expect(ress.body.error).to.equal('Missing email or username')
 })
 })
-it('API Tests - POST Request - DELETE', () =>{
+it('API Tests - Request - DELETE', () =>{
   cy.request({
     url:'/users/1',
     method: 'DELETE'}).as('deleteUser')
